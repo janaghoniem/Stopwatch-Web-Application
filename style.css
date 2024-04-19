@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: black;
+    overflow-y: auto;
+}
+
+#logo {
+    text-transform: uppercase;
+    color: aliceblue;
+    margin: 10px 10px;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-right: 500px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 80px; 
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.buttons button {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid; 
+    outline: none; 
+    font-size: 25px; 
+    cursor: pointer; 
+}
+
+
+.start {
+    width: 155px; 
+    height: 155px;
+    border-radius: 50%; 
+    border: 2px solid #17351c; 
+    background-color: transparent;
+    transition: border-color 0.5s ease;
+}
+
+.start:hover {
+    border-color:  rgb(23, 53, 28, 0.6);
+}
+
+#start {
+    margin: 2px;
+    color: #4ED963;
+    background-color:  #17351c;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+#start:hover {
+    background-color:  rgb(23, 53, 28, 0.6);
+}
+
+.reset {
+    width: 155px; 
+    height: 155px;
+    border-radius: 50%; 
+    border: 2px solid #434242; 
+    background-color: transparent;
+    transition: border-color 0.5s ease;
+}
+
+.reset:hover {
+    border-color: rgb(67, 66, 66, 0.6);
+}
+
+#reset {
+    margin: 2px; 
+    color: aliceblue;
+    background-color: #434242;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+#reset:hover {
+    background-color: rgb(67, 66, 66, 0.6);
+}
+
+.stop {
+    visibility: hidden;
+    width: 155px; 
+    height: 155px;
+    margin-top: -170px;
+    border-radius: 50%; 
+    border: 2px solid #351717; 
+    background-color: transparent;
+    transition: border-color 0.5s ease;
+    z-index: 5;
+}
+
+.stop:hover {
+    border-color:  rgb(53, 23, 23, 0.6);
+}
+
+#stop {
+    margin: 2px;
+    color: #e01c1c;
+    background-color:  #351717;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+#stop:hover {
+    background-color:  rgb(53, 23, 23, 0.6);
+}
+
+.Lap {
+    visibility: hidden;
+    width: 155px; 
+    height: 155px;
+    margin-top: -170px;
+    border-radius: 50%; 
+    border: 2px solid #434242; 
+    background-color: transparent;
+    transition: border-color 0.5s ease;
+    z-index: 5;
+}
+
+.Lap:hover {
+    border-color: rgb(67, 66, 66, 0.6);
+}
+
+#Lap {
+    margin: 2px; 
+    color: aliceblue;
+    background-color: #434242;
+    border-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+#Lap:hover {
+    background-color: rgb(67, 66, 66, 0.6);
+}
+
+#lapContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 150px;
+    width: 600px; 
+    border-color: aliceblue;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 5px solid rgb(255, 111, 0); 
+    border-radius:10px;
+    padding: 5px; 
+}
+
+.lapnumber, .laptime {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 5px;
+    margin-bottom: -15px;
+    width: 300px; 
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 30px;
+    max-height: 4px;
+}
+
